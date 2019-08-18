@@ -119,7 +119,7 @@ public class VehicleManager {
 	private Integer getClosestFromRouteEndPoints(Point2D point)
 	{
 		int currentKey = -1;
-		int currentMinDistance = 99999;
+		int currentMinDistance = Integer.MAX_VALUE;
 		int preferredDestListSize = 0;
 
 		while (currentKey == -1)
