@@ -1,11 +1,17 @@
 package vehicle;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.awt.geom.Point2D;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
 import routing.RouteDispatcher;
 
 /*
@@ -14,7 +20,8 @@ import routing.RouteDispatcher;
  */
 public class Vehicle implements Runnable {
 
-	private final Point2D DEFAULT_START = new Point2D.Double(-97.753438, 30.229688);
+	public final static Point2D DEFAULT_START = new Point2D.Double(-97.753438, 30.229688);
+	public final static Point2D NOT_FOUND = new Point2D.Double(-1, -1);
 
 	public final AtomicBoolean shouldRun;
 	private final Random random = new Random();
@@ -24,9 +31,13 @@ public class Vehicle implements Runnable {
 	private List<Point2D> route = new ArrayList<Point2D>();
 	private List<Point2D> destinationList = new ArrayList<Point2D>();
 	private final long delay;
+	private final String fileToWrite;
+	private final DateFormat dateFileFormat = new SimpleDateFormat("MM-dd-yyyy-HH_mm_ss");
+	private final DateFormat dateToStringFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
 
 	/*
 	 * Default Constructor
+	 * Assigns a random id, available status, coordinates at St. Edward's, 5 second delay, and default fileFormat
 	 */
 	public Vehicle()
 	{
@@ -35,6 +46,7 @@ public class Vehicle implements Runnable {
 		status = VehicleStatus.AVAILABLE;
 		coordinates = DEFAULT_START;
 		delay = 5*1000;
+		fileToWrite = "/Users/patricklewis/VehicleTestOutput/default/vehicle" + id + "simulator" + dateFileFormat.format(getCurrentDateTime()) + ".txt";
 	}
 
 	/*
@@ -44,14 +56,16 @@ public class Vehicle implements Runnable {
 	 * int id: the id of the vehicle
 	 * Point2D coordinates: the starting coordinates of the vehicle
 	 * long delay: the amount of time in milliseconds that the vehicle goes without reporting
+	 * String folderName: the name of the folder to store this vehicle's output in. Send in format 'folderName' with no slashes
 	 */
-	public Vehicle(int id, Point2D coordinates, long delay)
+	public Vehicle(int id, Point2D coordinates, long delay, String folderName)
 	{
 		shouldRun = new AtomicBoolean(true);
 		this.id = id;
 		status = VehicleStatus.AVAILABLE;
 		this.coordinates = coordinates;
 		this.delay = delay;
+		fileToWrite = "/Users/patricklewis/VehicleTestOutput/" + folderName + "/vehicle" + id + "simulator" + dateFileFormat.format(getCurrentDateTime()) + ".txt";
 	}
 
 	/*
@@ -60,9 +74,10 @@ public class Vehicle implements Runnable {
 	 */
 	public String toString()
 	{
-		return "** Vehicle ID #" + this.getId() + 
-				"\nVehicle Status: " + this.getStatusString() + 
-				"\nVehicle Coordinates: " + this.getPrintedCoordinates() + "**";
+		return "** Report date/time:" + dateToStringFormat.format(getCurrentDateTime()) + "\nVehicle ID #" + getId() + 
+				"\nVehicle Status: " + getStatusString() + 
+				"\nVehicle Coordinates: " + getPrintedCoordinates() + 
+				"\nVehicle Destination: " + getRouteEndAddress() + " **";
 	}
 
 	/*
@@ -71,72 +86,86 @@ public class Vehicle implements Runnable {
 	 */
 	public void run()
 	{
-		while (shouldRun.get())
-		{
-			/*
-			 * This section of the code pertains to when the vehicle is IN_TRANSIT and has a route to follow
-			 */
-			long count = 0;
-			while (status == VehicleStatus.IN_TRANSIT && route.size() > 0)
+		try {
+			FileWriter fw = new FileWriter(fileToWrite);
+			
+			fw.write("** Vehicle simulation started at: " + dateToStringFormat.format(getCurrentDateTime()) + " **");
+			
+			// This while loop will run until the shutdown command is given
+			while (shouldRun.get())
 			{
 				/*
-				 * If the count has become greater than or equal to the delay, print toString and status
+				 * This section of the code pertains to when the vehicle is IN_TRANSIT and has a route to follow
 				 */
-				if(count >= delay)
+				long count = 0;
+				while (status == VehicleStatus.IN_TRANSIT && route.size() > 0)
 				{
-					System.out.println(toString());
-					count = 0;
-				}
-				
-				// grab the first coordinate in the route and remove it after that.
-				coordinates = route.get(0);
-				route.remove(0);
-				
-				// when the route is empty set the vehicle status to arrived
-				if (route.isEmpty())
-				{
-					setStatus(VehicleStatus.ARRIVED);
-					String address = RouteDispatcher.reverseGeocoding(getCoordinates());
-					System.out.println("Vehicle #" + getId() + " arrived at " + address + ".");
-				}
-				try {
-					// sleep one second and add to count same number of seconds
-					Thread.sleep(1000);
-					count += 1000;
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			}
-			/*
-			 * This sections pertains to wen the vehicle does not have a route
-			 */
-			if (status == VehicleStatus.AVAILABLE || status == VehicleStatus.ARRIVED)
-			{
-				// if the destination list has more items in it, get the next route
-				if(destinationList.size() > 0)
-				{
-					getNextRoute();
-				}
-				else
-				{
-					// otherwise print toString/status and make sure the status is available and not arrived
-					System.out.println(toString());
-					setStatus(VehicleStatus.AVAILABLE);
+					/*
+					 * If the count has become greater than or equal to the delay, print toString and status
+					 */
+					if(count >= delay)
+					{
+						fw.write(toString());
+						count = 0;
+					}
+					
+					// grab the first coordinate in the route and remove it after that.
+					coordinates = route.get(0);
+					route.remove(0);
+					
+					// when the route is empty set the vehicle status to arrived
+					if (route.isEmpty())
+					{
+						setStatus(VehicleStatus.ARRIVED);
+						String address = RouteDispatcher.reverseGeocoding(getCoordinates());
+						fw.write("** Vehicle #" + getId() + " arrived at " + address + " @" + dateToStringFormat.format(getCurrentDateTime()) + " **");
+					}
 					try {
-						Thread.sleep(delay);
+						// sleep one second and add to count same number of seconds
+						Thread.sleep(1000);
+						count += 1000;
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
 				}
-			} 
-		} // end of shouldRun while loop
+				/*
+				 * This sections pertains to wen the vehicle does not have a route
+				 */
+				if (status == VehicleStatus.AVAILABLE || status == VehicleStatus.ARRIVED)
+				{
+					// if the destination list has more items in it, get the next route
+					if(destinationList.size() > 0)
+					{
+						getNextRoute();
+					}
+					else
+					{
+						// otherwise print toString/status and make sure the status is available and not arrived
+						fw.write(toString());
+						setStatus(VehicleStatus.AVAILABLE);
+						try {
+							Thread.sleep(delay);
+						} catch (InterruptedException e) {
+							e.printStackTrace();
+						}
+					}
+				} 
+			} // end of shouldRun while loop
+			
+			/*
+			 * Write shutting down date/time to file and close file writer
+			 */
+			fw.write("*** Vehicle #" + getId() + " shutting down at " + dateToStringFormat.format(getCurrentDateTime()) + " ***");
+			fw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
-		System.out.println("Vehicle #" + getId() + " exiting...");
 	}
 
 	public int getId()
 	{
-		return this.id;
+		return id;
 	}
 
 	public Vehicle setId(int id) 
@@ -147,7 +176,7 @@ public class Vehicle implements Runnable {
 
 	public VehicleStatus getStatus()
 	{
-		return this.status;
+		return status;
 	}
 
 	public Vehicle setStatus(VehicleStatus status) 
@@ -158,12 +187,12 @@ public class Vehicle implements Runnable {
 
 	public String getStatusString()
 	{
-		return this.status.toString();
+		return status.toString();
 	}
 
 	public Point2D getCoordinates()
 	{
-		return this.coordinates;
+		return coordinates;
 	}
 
 	public Vehicle setCoordinates(Point2D coordinates) 
@@ -174,12 +203,12 @@ public class Vehicle implements Runnable {
 
 	public String getPrintedCoordinates()
 	{
-		return "(" + this.coordinates.getX() + ", " + this.coordinates.getY() + ")";
+		return "(" + coordinates.getX() + ", " + coordinates.getY() + ")";
 	}
 
 	public List<Point2D> getRoute()
 	{
-		return this.route;
+		return route;
 	}
 
 	public Vehicle setRoute(List<Point2D> route) 
@@ -190,7 +219,7 @@ public class Vehicle implements Runnable {
 
 	public String getRouteString()
 	{
-		String routeString = "Vehicle #" + this.getId() + " Route Start: \n";
+		String routeString = "Vehicle #" + getId() + " Route Start: \n";
 		for(int r = 0; r < route.size(); r++) {
 			if (r != (route.size() - 1)) 
 			{
@@ -205,7 +234,7 @@ public class Vehicle implements Runnable {
 
 	public Point2D getRouteStartCoordinates()
 	{
-		Point2D coords = new Point2D.Double();
+		Point2D coords = new Point2D.Double(-1,-1);
 		if (route.size() > 0)
 		{
 			coords = route.get(0);
@@ -215,19 +244,41 @@ public class Vehicle implements Runnable {
 
 	public Point2D getRouteEndCoordinates()
 	{
-		Point2D coords = new Point2D.Double();
+		Point2D coords = new Point2D.Double(-1,-1);
 		if (route.size() > 0)
 		{
 			coords = route.get((route.size() - 1));
 		}
 		return coords;
 	}
+	
+	public String getRouteStartAddress()
+	{
+		String retAddress = "No route.";
+		Point2D startCoords = getRouteStartCoordinates();
+		if (!startCoords.equals(NOT_FOUND))
+		{
+			retAddress = RouteDispatcher.reverseGeocoding(startCoords);
+		}
+		return retAddress;
+	}
+	
+	public String getRouteEndAddress()
+	{
+		String retAddress = "No route.";
+		Point2D endCoords = getRouteEndCoordinates();
+		if (!endCoords.equals(NOT_FOUND))
+		{
+			retAddress = RouteDispatcher.reverseGeocoding(endCoords);
+		}
+		return retAddress;
+	}
 
 	public String getRouteStartAndEndAddress() 
 	{
-		return "Vehicle #" + this.getId() + 
-				"\nRoute Start: " + RouteDispatcher.reverseGeocoding(this.getRouteStartCoordinates()) + 
-				"\nRoute End: " + RouteDispatcher.reverseGeocoding(this.getRouteEndCoordinates());
+		return "Vehicle #" + getId() + 
+				"\nRoute Start: " + getRouteStartAddress() + 
+				"\nRoute End: " + getRouteEndAddress();
 	}
 
 	public List<Point2D> getDestinationList() 
@@ -266,6 +317,11 @@ public class Vehicle implements Runnable {
 			getDestinationList().remove(0);
 			setStatus(VehicleStatus.IN_TRANSIT);
 		}
+	}
+	
+	private Date getCurrentDateTime()
+	{
+		return new Date();
 	}
 
 	@Override
