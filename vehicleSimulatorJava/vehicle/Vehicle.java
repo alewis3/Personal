@@ -49,7 +49,7 @@ public class Vehicle implements Runnable {
 		status = VehicleStatus.AVAILABLE;
 		coordinates = DEFAULT_START;
 		delay = 5*1000;
-		fileToWrite = "default/vehicle" + id + "simulator" + dateFileFormat.format(getCurrentDateTime()) + ".txt";
+		fileToWrite = "test/default/vehiclesimulator" + id + "_" + dateFileFormat.format(getCurrentDateTime()) + ".txt";
 	}
 
 	/*
@@ -69,7 +69,7 @@ public class Vehicle implements Runnable {
 		status = VehicleStatus.AVAILABLE;
 		this.coordinates = coordinates;
 		this.delay = delay;
-		fileToWrite = folderName + "/vehicle" + id + "simulator" + dateFileFormat.format(getCurrentDateTime()) + ".txt";
+		fileToWrite = "test/" + folderName + "/vehiclesimulator" + id + "_" + dateFileFormat.format(getCurrentDateTime()) + ".txt";
 	}
 
 	/*

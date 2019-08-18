@@ -51,6 +51,17 @@ public class VehicleInstantiator {
 			}
 		}
 
+		Runtime.getRuntime().addShutdownHook(new Thread()
+		{
+			public void run()
+			{
+				System.out.println("Shutdown hook enabled");
+				sc.close();
+				vm.values().forEach(vehicle -> vehicle.shouldRun.set(false));
+				vehicleExecutor.shutdown();
+			}
+		});
+
 		/*
 		 * Here we will grab the user's input and keep printing the menu until they enter something valid.
 		 */
@@ -73,6 +84,7 @@ public class VehicleInstantiator {
 				catch (NumberFormatException e)
 				{
 					System.out.println("Error: Choice must be an integer!");
+					choice = 0;
 				}
 
 			}
@@ -142,7 +154,7 @@ public class VehicleInstantiator {
 		vm.values().forEach(vehicle -> vehicle.shouldRun.set(false));
 		System.out.println("Vehicles shutting down");
 		vehicleExecutor.shutdown();
-		
+
 		/*
 		 * Check if the program is still running.
 		 */
