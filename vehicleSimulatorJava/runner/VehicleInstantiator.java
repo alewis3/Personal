@@ -87,18 +87,27 @@ public class VehicleInstantiator {
 			 * a delay of 10 seconds, and the filename specified
 			 */
 			case 1:
-				System.out.println("Adding vehicle #" + vm.size());
-				Vehicle vehicle = new Vehicle(vm.size(), (new Point2D.Double(-97.7437,30.2711)), 10*1000, fileName);
-				vm.add(vehicle);
-				vehicleExecutor.execute(vehicle);
-				break;
-			/* 
-			 * if the option is 2 we need to retrieve an address from the user and find the closest 
-			 * available vehicle to that address. If there are no available vehicles, we will try 
-			 * to find the closest vehicle with the shortest destination list that can take the job
-			 */
+				try
+				{
+					System.out.println("Adding vehicle #" + vm.size());
+					Vehicle vehicle = new Vehicle(vm.size(), (new Point2D.Double(-97.7437,30.2711)), 10*1000, fileName);
+					vm.add(vehicle);
+					vehicleExecutor.execute(vehicle);
+					choice = 0;
+					break;
+				} catch (Exception e)
+				{
+					System.out.println("Could not add vehicle due to: " + e.getClass().getName() + " error");
+					e.printStackTrace();
+					System.exit(0);
+				}
+				/* 
+				 * if the option is 2 we need to retrieve an address from the user and find the closest 
+				 * available vehicle to that address. If there are no available vehicles, we will try 
+				 * to find the closest vehicle with the shortest destination list that can take the job
+				 */
 			case 2:
-				System.out.println("Please enter the address in Austin where you need a vehicle sent. \nPlease enter a valid address with more than three characters and no semicolons.");
+				System.out.println("Please enter the address in Austin where you need a vehicle sent. \nEnter a valid address with more than three characters and no semicolons.");
 				String address = "";
 				while (address.isEmpty())
 				{
@@ -106,7 +115,7 @@ public class VehicleInstantiator {
 					if (address.length() <= 3)
 					{
 						address = "";
-						System.out.println("Address must be more than 3 characters!\nPlease enter the address in Austin where you need a vehicle sent. \nPlease enter a valid address with more than three characters and no semicolons.");
+						System.out.println("Address must be more than 3 characters!\nPlease enter the address in Austin where you need a vehicle sent. \nEnter a valid address with more than three characters and no semicolons.");
 					}
 				}
 
@@ -117,20 +126,43 @@ public class VehicleInstantiator {
 				}
 				else
 				{
-					System.out.println("Directing vehicle #" + vm.get(vehicleIndex).getId() + " to " + address + ".");
+					System.out.println("Directing vehicle #" + vm.get(vehicleIndex).getId() + " to " + address + " now.");
 					vm.get(vehicleIndex).addAddressToDestinationList(address);
 				}
+				choice = 0;
+				break;
+			case 3: 
 				break;
 			default:
 				System.out.println("Invalid Choice.");
 				break;
 			}
-
 		}
 		sc.close();
-		vm.values().forEach(vehicleRunnable -> vehicleRunnable.shouldRun.set(false));
+		vm.values().forEach(vehicle -> vehicle.shouldRun.set(false));
 		System.out.println("Vehicles shutting down");
 		vehicleExecutor.shutdown();
+		
+		/*
+		 * Check if the program is still running.
+		 */
+		boolean programRunning = true;
+		while (programRunning)
+		{
+			int finishedCount = 0;
+			for(int h = 0; h < vm.size(); h++)
+			{
+				if (!vm.get(h).isStillRunning())
+				{
+					finishedCount++;
+				}
+			}
+			if (finishedCount == vm.size())
+			{
+				programRunning = false;
+			}
+		}
+		System.out.println("All vehicles shut down");
 	}
 
 	public static void printMenu()

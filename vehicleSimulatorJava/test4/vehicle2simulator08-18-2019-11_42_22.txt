@@ -1,0 +1,122 @@
+** Vehicle simulation started at: 08/18/2019 11:42:22 **
+
+
+** Report date/time:08/18/2019 11:42:22
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:42:32
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:42:42
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:42:52
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:43:02
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:43:12
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:43:22
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Vehicle #2 departing to destination 1601 Cedar Avenue, Austin, Texas 78702, United States @ 08/18/2019 11:43:32 **
+
+** Report date/time:08/18/2019 11:43:42
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.743809, 30.272484)
+Vehicle Destination: 2509 East 16th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/18/2019 11:43:52
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.741321, 30.272798)
+Vehicle Destination: 2509 East 16th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/18/2019 11:44:02
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.738659, 30.272057)
+Vehicle Destination: 2509 East 16th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/18/2019 11:44:12
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.735445, 30.27116)
+Vehicle Destination: 2509 East 16th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/18/2019 11:44:22
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.733713, 30.270679)
+Vehicle Destination: 2509 East 16th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/18/2019 11:44:32
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.732329, 30.270763)
+Vehicle Destination: 2509 East 16th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/18/2019 11:44:42
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.730901, 30.272027)
+Vehicle Destination: 2509 East 16th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/18/2019 11:44:53
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.725844, 30.272827)
+Vehicle Destination: 2509 East 16th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/18/2019 11:45:03
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.719904, 30.273766)
+Vehicle Destination: 2509 East 16th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/18/2019 11:45:13
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.716054, 30.274722)
+Vehicle Destination: 2509 East 16th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/18/2019 11:45:23
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.715104, 30.277567)
+Vehicle Destination: 2509 East 16th Street, Austin, Texas 78702, United States **
+
+** Vehicle #2 arrived at 2509 East 16th Street, Austin, Texas 78702, United States @ 08/18/2019 11:45:28 **
+
+** Report date/time:08/18/2019 11:45:29
+Vehicle ID #2
+Vehicle Status: ARRIVED
+Vehicle Coordinates: (-97.713407, 30.27783)
+Vehicle Destination: No route. **
+
+*** Vehicle #2 shutting down at 08/18/2019 11:45:39 ***

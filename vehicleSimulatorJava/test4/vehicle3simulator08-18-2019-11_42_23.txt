@@ -1,0 +1,64 @@
+** Vehicle simulation started at: 08/18/2019 11:42:23 **
+
+
+** Report date/time:08/18/2019 11:42:23
+Vehicle ID #3
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:42:33
+Vehicle ID #3
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:42:43
+Vehicle ID #3
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:42:53
+Vehicle ID #3
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:43:03
+Vehicle ID #3
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:43:13
+Vehicle ID #3
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:43:23
+Vehicle ID #3
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:43:33
+Vehicle ID #3
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:43:43
+Vehicle ID #3
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/18/2019 11:43:53
+Vehicle ID #3
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+*** Vehicle #3 shutting down at 08/18/2019 11:44:03 ***

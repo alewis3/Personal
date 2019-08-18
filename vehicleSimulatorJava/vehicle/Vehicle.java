@@ -7,6 +7,7 @@ import java.util.Objects;
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.awt.geom.Point2D;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -24,6 +25,7 @@ public class Vehicle implements Runnable {
 	public final static Point2D NOT_FOUND = new Point2D.Double(-1, -1);
 
 	public final AtomicBoolean shouldRun;
+	private boolean isAlive;
 	private final Random random = new Random();
 	private int id;
 	private VehicleStatus status;
@@ -42,11 +44,12 @@ public class Vehicle implements Runnable {
 	public Vehicle()
 	{
 		shouldRun = new AtomicBoolean(true);
+		isAlive = false;
 		id = random.nextInt();
 		status = VehicleStatus.AVAILABLE;
 		coordinates = DEFAULT_START;
 		delay = 5*1000;
-		fileToWrite = "/Users/patricklewis/VehicleTestOutput/default/vehicle" + id + "simulator" + dateFileFormat.format(getCurrentDateTime()) + ".txt";
+		fileToWrite = "default/vehicle" + id + "simulator" + dateFileFormat.format(getCurrentDateTime()) + ".txt";
 	}
 
 	/*
@@ -61,11 +64,12 @@ public class Vehicle implements Runnable {
 	public Vehicle(int id, Point2D coordinates, long delay, String folderName)
 	{
 		shouldRun = new AtomicBoolean(true);
+		isAlive = false;
 		this.id = id;
 		status = VehicleStatus.AVAILABLE;
 		this.coordinates = coordinates;
 		this.delay = delay;
-		fileToWrite = "/Users/patricklewis/VehicleTestOutput/" + folderName + "/vehicle" + id + "simulator" + dateFileFormat.format(getCurrentDateTime()) + ".txt";
+		fileToWrite = folderName + "/vehicle" + id + "simulator" + dateFileFormat.format(getCurrentDateTime()) + ".txt";
 	}
 
 	/*
@@ -74,7 +78,7 @@ public class Vehicle implements Runnable {
 	 */
 	public String toString()
 	{
-		return "** Report date/time:" + dateToStringFormat.format(getCurrentDateTime()) + "\nVehicle ID #" + getId() + 
+		return "\n\n** Report date/time:" + dateToStringFormat.format(getCurrentDateTime()) + "\nVehicle ID #" + getId() + 
 				"\nVehicle Status: " + getStatusString() + 
 				"\nVehicle Coordinates: " + getPrintedCoordinates() + 
 				"\nVehicle Destination: " + getRouteEndAddress() + " **";
@@ -87,9 +91,13 @@ public class Vehicle implements Runnable {
 	public void run()
 	{
 		try {
-			FileWriter fw = new FileWriter(fileToWrite);
+			isAlive = true;
+			File file = new File(fileToWrite);
+			file.getParentFile().mkdirs();
+			FileWriter fw = new FileWriter(file, true);
 			
-			fw.write("** Vehicle simulation started at: " + dateToStringFormat.format(getCurrentDateTime()) + " **");
+			fw.write("** Vehicle simulation started at: " + dateToStringFormat.format(getCurrentDateTime()) + " **\n");
+			fw.flush();
 			
 			// This while loop will run until the shutdown command is given
 			while (shouldRun.get())
@@ -118,7 +126,9 @@ public class Vehicle implements Runnable {
 					{
 						setStatus(VehicleStatus.ARRIVED);
 						String address = RouteDispatcher.reverseGeocoding(getCoordinates());
-						fw.write("** Vehicle #" + getId() + " arrived at " + address + " @" + dateToStringFormat.format(getCurrentDateTime()) + " **");
+						fw.write("\n\n** Vehicle #" + getId() + " arrived at " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **");
+						System.out.println("\n** Vehicle #" + getId() + " arrived at " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **");
+
 					}
 					try {
 						// sleep one second and add to count same number of seconds
@@ -136,7 +146,7 @@ public class Vehicle implements Runnable {
 					// if the destination list has more items in it, get the next route
 					if(destinationList.size() > 0)
 					{
-						getNextRoute();
+						getNextRoute(fw);
 					}
 					else
 					{
@@ -155,10 +165,14 @@ public class Vehicle implements Runnable {
 			/*
 			 * Write shutting down date/time to file and close file writer
 			 */
-			fw.write("*** Vehicle #" + getId() + " shutting down at " + dateToStringFormat.format(getCurrentDateTime()) + " ***");
+			fw.write("\n\n*** Vehicle #" + getId() + " shutting down at " + dateToStringFormat.format(getCurrentDateTime()) + " ***");
+			fw.flush();
 			fw.close();
+			isAlive = false;
 		} catch (IOException e) {
+			isAlive = false;
 			e.printStackTrace();
+			System.exit(0);
 		}
 		
 	}
@@ -305,13 +319,18 @@ public class Vehicle implements Runnable {
 		return this;
 	}
 
-	public void getNextRoute()
+	public void getNextRoute(FileWriter fw)
 	{
 		if(destinationList.size() > 0)
 		{
 			Point2D newDestination = getDestinationList().get(0);
 			String address = RouteDispatcher.reverseGeocoding(newDestination);
-			System.out.println("Vehicle #" + getId() + " departing to destination " + address + ".");
+			try {
+				fw.write("\n\n** Vehicle #" + getId() + " departing to destination " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			System.out.println("\n** Vehicle #" + getId() + " departing to destination " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **");
 			Point2D currentLocation = getCoordinates();
 			route = RouteDispatcher.getRouteFromCoordinates(currentLocation, newDestination);
 			getDestinationList().remove(0);
@@ -322,6 +341,11 @@ public class Vehicle implements Runnable {
 	private Date getCurrentDateTime()
 	{
 		return new Date();
+	}
+	
+	public boolean isStillRunning()
+	{
+		return isAlive;
 	}
 
 	@Override
