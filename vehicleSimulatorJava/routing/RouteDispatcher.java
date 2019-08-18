@@ -22,7 +22,7 @@ public class RouteDispatcher {
 	private final static String MAPBOX_TOKEN = "pk.eyJ1IjoiYWxld2lzMyIsImEiOiJjanJsZnY3eG8wODZ6M3lyMjNkbjI0djBmIn0.G-d-49VqmS1MkmucwhzmJg";
 	private final static String MAPBOX_GEOCODING_URL = "https://api.mapbox.com/geocoding/v5/mapbox.places/";
 	private final static String MAPBOX_ROUTING_URL = "https://api.mapbox.com/directions/v5/mapbox/driving/";
-	
+	private final static String BBOX = "-98.10986697734825,30.0224906564967,-97.3622527256841,30.73727958749211";
 	/*
 	 * Parameters: 
 	 * String starting: the starting address of the route
@@ -76,6 +76,30 @@ public class RouteDispatcher {
 	
 	/*
 	 * Parameters: 
+	 * Point2D starting: the starting coordinate of the route
+	 * Point2D destination: the destination coordinate of the route
+	 * 
+	 * Returns: 
+	 * The distance from the start to the destination
+	 */
+	public static Double getDistanceFromCoordinates(Point2D starting, Point2D destination)
+	{
+		String url = buildRoutingURL(starting, destination);
+		String response = getRequest(url);
+		JSONParser p = new JSONParser();
+		JSONObject jsonObject = new JSONObject();
+		try {
+			jsonObject = (JSONObject) p.parse(response);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		JSONArray legs = (JSONArray) ((JSONObject) ((JSONArray) jsonObject.get("routes")).get(0)).get("legs");
+		Double distance = (Double) ((JSONObject) legs.get(0)).get("distance");
+		return distance;
+	}
+	
+	/*
+	 * Parameters: 
 	 * String address: the address to convert to coordinates
 	 * 
 	 * Returns: 
@@ -93,8 +117,15 @@ public class RouteDispatcher {
 			e.printStackTrace();
 		}
 		JSONArray features = (JSONArray) jsonObject.get("features");
-		JSONArray center = (JSONArray) ((JSONObject) features.get(0)).get("center");
-		return new Point2D.Double((Double) center.get(0), (Double) center.get(1));
+		if (!features.isEmpty()) 
+		{
+			JSONArray center = (JSONArray) ((JSONObject) features.get(0)).get("center");
+			return new Point2D.Double((Double) center.get(0), (Double) center.get(1));
+		}
+		else
+		{
+			return new Point2D.Double(-1, -1);
+		}
 	}
 	
 	/*
@@ -183,11 +214,12 @@ public class RouteDispatcher {
 	 * 
 	 * Returns: 
 	 * The request string with specified address prepared with prepareAddress (See below)
+	 * Note: this url will include a bbox around the greater Austin, Texas area so vehicles don't roam too far
 	 */
 	private static String buildGeocodingURLFromAddress(String address)
 	{
 		String preparedAddress = prepareAddress(address);
-		return MAPBOX_GEOCODING_URL + preparedAddress + ".json?access_token=" + MAPBOX_TOKEN;
+		return MAPBOX_GEOCODING_URL + preparedAddress + ".json?bbox=" + BBOX + "&access_token=" + MAPBOX_TOKEN;
 	}
 	
 	/*
