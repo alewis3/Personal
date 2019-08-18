@@ -23,6 +23,7 @@ public class RouteDispatcher {
 	private final static String MAPBOX_GEOCODING_URL = "https://api.mapbox.com/geocoding/v5/mapbox.places/";
 	private final static String MAPBOX_ROUTING_URL = "https://api.mapbox.com/directions/v5/mapbox/driving/";
 	private final static String BBOX = "-98.10986697734825,30.0224906564967,-97.3622527256841,30.73727958749211";
+	private final static Point2D NOT_FOUND = new Point2D.Double(-1, -1);
 	/*
 	 * Parameters: 
 	 * String starting: the starting address of the route
@@ -35,6 +36,11 @@ public class RouteDispatcher {
 	{
 		Point2D startingPoint = forwardGeocoding(starting);
 		Point2D endingPoint = forwardGeocoding(destination);
+		
+		if (startingPoint == NOT_FOUND || endingPoint == NOT_FOUND)
+		{
+			return new ArrayList<Point2D>();
+		}
 		return getRouteFromCoordinates(startingPoint, endingPoint);
 	}
 	

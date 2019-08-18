@@ -238,9 +238,16 @@ public class VehicleRunnable implements Runnable {
 		return this;
 	}
 
-	public VehicleRunnable addDestinationToList(Point2D newDest)
+	public VehicleRunnable addPointToDestinationList(Point2D newDest)
 	{
 		destinationList.add(newDest);
+		return this;
+	}
+	
+	public VehicleRunnable addAddressToDestinationList(String address)
+	{
+		Point2D point = RouteDispatcher.forwardGeocoding(address);
+		addPointToDestinationList(point);
 		return this;
 	}
 

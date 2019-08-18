@@ -1,57 +1,70 @@
 package runner;
 
 import java.awt.geom.Point2D;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import vehicle.VehicleRunnable;
+import vehicleManager.VehicleManager;
 
 public class VehicleInstantiator {
 
 	public static int vehicleCount = 0;
-	
+
 	public static void main(String[] args) {
-		
-		List<VehicleRunnable> vehicles = new ArrayList<>();
+
+		VehicleManager vm = new VehicleManager();
 		ExecutorService vehicleExecutor = Executors.newCachedThreadPool();
-		
+		Scanner sc = new Scanner(System.in);
+
 		System.out.println("*** Thank you for starting the Java Vehicle Simulator. \nCreated by Amanda Lewis 2019. ***");
-		
+
 		int choice = 0;
 		while (choice != 3)
 		{
 			printMenu();
-			if (choice == 1)
+			choice = sc.nextInt();
+			if (choice < 1 || choice > 3)
 			{
-				vehicleCount++;
-				VehicleRunnable vehicle = new VehicleRunnable(vehicleCount, (new Point2D.Double(-97.7437,30.2711)), 8*1000);
-				vehicles.add(vehicle);
-				vehicleExecutor.execute(vehicle);
+				System.out.println("Choice must be between 1 and 3!");
 			}
-			if (choice == 2)
+			else
 			{
-				
+				if (choice == 1)
+				{
+					System.out.println("Adding vehicle #" + vm.size());
+					VehicleRunnable vehicle = new VehicleRunnable(vm.size(), (new Point2D.Double(-97.7437,30.2711)), 8*1000);
+					vm.add(vehicle);
+					vehicleExecutor.execute(vehicle);
+				}
+				if (choice == 2)
+				{
+					System.out.println("Please enter the address in Austin where you need a vehicle sent.");
+					String address = sc.nextLine();
+					int vehicleIndex = vm.getClosestAvailableFromAddress(address);
+					if (vehicleIndex == -1)
+					{
+						System.out.println("Your address could not be found, possibly because it was misspelled or not in Austin. Please try again.");
+					}
+					else
+					{
+						vm.get(vehicleIndex).addAddressToDestinationList(address);
+					}
+				}
 			}
+
 		}
-		
-		
-		
-		
-		
-		vehicles.add(new VehicleRunnable(1, (new Point2D.Double(-97.753438, 30.229688)), 8*1000));
-
-		vehicleExecutor.execute(vehicles.get(0));
-
-        //kindly request vehicles to shut down (will not complete until after all routes are done)
-        vehicles.values().forEach(vehicleRunnable -> vehicleRunnable.shouldRun.set(false));
-        System.out.println("Vehicles shutting down");
-        vehicleExecutor.shutdown();
+		vm.values().forEach(vehicleRunnable -> vehicleRunnable.shouldRun.set(false));
+		System.out.println("Vehicles shutting down");
+		vehicleExecutor.shutdown();
 	}
 
 	public static void printMenu()
 	{
-		System.out.println("Please pick an option from 1 to 3: \n1) Add a vehicle \n2) Direct a vehicle to an address \n3) Exit");
+		System.out.println("\nPlease pick an option from 1 to 3: \n1) Add a vehicle \n2) Direct a vehicle to an address \n3) Exit\n");
 	}
 }
