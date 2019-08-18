@@ -15,14 +15,15 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 /*
- * Created by Amanda Lewis on 8-17-2019
+ * @author Amanda Lewis
+ * Created on 8-17-2019
  */
 public class RouteDispatcher {
 
 	private final static String MAPBOX_TOKEN = "pk.eyJ1IjoiYWxld2lzMyIsImEiOiJjanJsZnY3eG8wODZ6M3lyMjNkbjI0djBmIn0.G-d-49VqmS1MkmucwhzmJg";
 	private final static String MAPBOX_GEOCODING_URL = "https://api.mapbox.com/geocoding/v5/mapbox.places/";
 	private final static String MAPBOX_ROUTING_URL = "https://api.mapbox.com/directions/v5/mapbox/driving/";
-	private final static String BBOX = "-98.10986697734825,30.0224906564967,-97.3622527256841,30.73727958749211";
+	private final static String BBOX = "-98.10986697734825,30.0224906564967,-97.3622527256841,30.73727958749211";  //bbox around greater Austin area
 	private final static Point2D NOT_FOUND = new Point2D.Double(-1, -1);
 	/*
 	 * Parameters: 
@@ -36,14 +37,14 @@ public class RouteDispatcher {
 	{
 		Point2D startingPoint = forwardGeocoding(starting);
 		Point2D endingPoint = forwardGeocoding(destination);
-		
+
 		if (startingPoint == NOT_FOUND || endingPoint == NOT_FOUND)
 		{
 			return new ArrayList<Point2D>();
 		}
 		return getRouteFromCoordinates(startingPoint, endingPoint);
 	}
-	
+
 	/*
 	 * Parameters: 
 	 * Point2D starting: the starting coordinate of the route
@@ -75,11 +76,11 @@ public class RouteDispatcher {
 				Point2D point = new Point2D.Double((Double) coordinate.get(0), (Double) coordinate.get(1));
 				route.add(point);
 			}
-			
+
 		}
 		return route;
 	}
-	
+
 	/*
 	 * Parameters: 
 	 * Point2D starting: the starting coordinate of the route
@@ -100,10 +101,20 @@ public class RouteDispatcher {
 			e.printStackTrace();
 		}
 		JSONArray legs = (JSONArray) ((JSONObject) ((JSONArray) jsonObject.get("routes")).get(0)).get("legs");
-		Double distance = (Double) ((JSONObject) legs.get(0)).get("distance");
+		double distance;
+		if ((((JSONObject) legs.get(0)).get("distance")).getClass().equals(Long.class))
+		{
+			long distanceLong = (long) ((JSONObject) legs.get(0)).get("distance");
+			distance = (double) distanceLong;
+		}
+		else
+		{
+			distance = (double) ((JSONObject) legs.get(0)).get("distance");
+		}
+
 		return distance;
 	}
-	
+
 	/*
 	 * Parameters: 
 	 * String address: the address to convert to coordinates
@@ -133,7 +144,7 @@ public class RouteDispatcher {
 			return new Point2D.Double(-1, -1);
 		}
 	}
-	
+
 	/*
 	 * Parameters: 
 	 * Point2D coordinates: the coordinates to convert to address in (long, lat) format
@@ -155,9 +166,9 @@ public class RouteDispatcher {
 		JSONArray features = (JSONArray) jsonObject.get("features");
 		String address = (String) ((JSONObject) features.get(0)).get("place_name");
 		return address;
-		
+
 	}
-	
+
 	/*
 	 * Parameters: 
 	 * String url: the full url to make a get request to including parameters
@@ -174,16 +185,16 @@ public class RouteDispatcher {
 		try {
 			URL obj = new URL(url);
 			HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
-			
+
 			connection.setRequestMethod("GET");
 			connection.connect();
-			
+
 			int responseCode = connection.getResponseCode();
-			
+
 			if (responseCode == 200)
 			{
 				BufferedReader in = new BufferedReader(
-				        new InputStreamReader(connection.getInputStream()));
+						new InputStreamReader(connection.getInputStream()));
 				String inputLine;
 
 				while ((inputLine = in.readLine()) != null) {
@@ -193,14 +204,14 @@ public class RouteDispatcher {
 			}
 			else
 			{
-				throw new RuntimeException("Error: Response code is " + responseCode);
+				throw new RuntimeException("Error: Response code is " + responseCode + " for request " + url);
 			}
 		} catch (IOException e) {
 			System.out.println("Error messages: " + e.getMessage());
 		}
 		return response.toString();
 	}
-	
+
 	/*
 	 * Parameters: 
 	 * Point2D point: the point to include in the geocoding URL
@@ -213,7 +224,7 @@ public class RouteDispatcher {
 		return MAPBOX_GEOCODING_URL + point.getX() + "," + point.getY() + 
 				".json?access_token=" + MAPBOX_TOKEN;
 	}
-	
+
 	/*
 	 * Parameters: 
 	 * String address: the address to include in the geocoding URL
@@ -227,7 +238,7 @@ public class RouteDispatcher {
 		String preparedAddress = prepareAddress(address);
 		return MAPBOX_GEOCODING_URL + preparedAddress + ".json?bbox=" + BBOX + "&access_token=" + MAPBOX_TOKEN;
 	}
-	
+
 	/*
 	 * Parameters: 
 	 * String address: The address to prepare for an API call
@@ -255,7 +266,7 @@ public class RouteDispatcher {
 		}
 		return temp;
 	}
-	
+
 	/*
 	 * Parameters: 
 	 * Point2D starting: the starting point to include in the geocoding URL	 

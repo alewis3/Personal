@@ -9,9 +9,10 @@ import java.awt.geom.Point2D;
 import routing.RouteDispatcher;
 
 /*
- * Created by Amanda Lewis on 8-17-2019
+ * @author Amanda Lewis
+ * Created on 8-17-2019
  */
-public class VehicleRunnable implements Runnable {
+public class Vehicle implements Runnable {
 
 	private final Point2D DEFAULT_START = new Point2D.Double(-97.753438, 30.229688);
 
@@ -27,7 +28,7 @@ public class VehicleRunnable implements Runnable {
 	/*
 	 * Default Constructor
 	 */
-	public VehicleRunnable()
+	public Vehicle()
 	{
 		shouldRun = new AtomicBoolean(true);
 		id = random.nextInt();
@@ -44,7 +45,7 @@ public class VehicleRunnable implements Runnable {
 	 * Point2D coordinates: the starting coordinates of the vehicle
 	 * long delay: the amount of time in milliseconds that the vehicle goes without reporting
 	 */
-	public VehicleRunnable(int id, Point2D coordinates, long delay)
+	public Vehicle(int id, Point2D coordinates, long delay)
 	{
 		shouldRun = new AtomicBoolean(true);
 		this.id = id;
@@ -83,7 +84,7 @@ public class VehicleRunnable implements Runnable {
 				 */
 				if(count >= delay)
 				{
-					System.out.println(this.toString());
+					System.out.println(toString());
 					count = 0;
 				}
 				
@@ -95,6 +96,8 @@ public class VehicleRunnable implements Runnable {
 				if (route.isEmpty())
 				{
 					setStatus(VehicleStatus.ARRIVED);
+					String address = RouteDispatcher.reverseGeocoding(getCoordinates());
+					System.out.println("Vehicle #" + getId() + " arrived at " + address + ".");
 				}
 				try {
 					// sleep one second and add to count same number of seconds
@@ -117,7 +120,7 @@ public class VehicleRunnable implements Runnable {
 				else
 				{
 					// otherwise print toString/status and make sure the status is available and not arrived
-					System.out.println(this.toString());
+					System.out.println(toString());
 					setStatus(VehicleStatus.AVAILABLE);
 					try {
 						Thread.sleep(delay);
@@ -136,7 +139,7 @@ public class VehicleRunnable implements Runnable {
 		return this.id;
 	}
 
-	public VehicleRunnable setId(int id) 
+	public Vehicle setId(int id) 
 	{
 		this.id = id;
 		return this;
@@ -147,7 +150,7 @@ public class VehicleRunnable implements Runnable {
 		return this.status;
 	}
 
-	public VehicleRunnable setStatus(VehicleStatus status) 
+	public Vehicle setStatus(VehicleStatus status) 
 	{
 		this.status = status;
 		return this;
@@ -163,7 +166,7 @@ public class VehicleRunnable implements Runnable {
 		return this.coordinates;
 	}
 
-	public VehicleRunnable setCoordinates(Point2D coordinates) 
+	public Vehicle setCoordinates(Point2D coordinates) 
 	{
 		this.coordinates = coordinates;
 		return this;
@@ -179,7 +182,7 @@ public class VehicleRunnable implements Runnable {
 		return this.route;
 	}
 
-	public VehicleRunnable setRoute(List<Point2D> route) 
+	public Vehicle setRoute(List<Point2D> route) 
 	{
 		this.route = route;
 		return this;
@@ -232,19 +235,19 @@ public class VehicleRunnable implements Runnable {
 		return destinationList;
 	}
 
-	public VehicleRunnable setDestinationList(List<Point2D> list)
+	public Vehicle setDestinationList(List<Point2D> list)
 	{
 		destinationList = list;
 		return this;
 	}
 
-	public VehicleRunnable addPointToDestinationList(Point2D newDest)
+	public Vehicle addPointToDestinationList(Point2D newDest)
 	{
 		destinationList.add(newDest);
 		return this;
 	}
 	
-	public VehicleRunnable addAddressToDestinationList(String address)
+	public Vehicle addAddressToDestinationList(String address)
 	{
 		Point2D point = RouteDispatcher.forwardGeocoding(address);
 		addPointToDestinationList(point);
@@ -256,6 +259,8 @@ public class VehicleRunnable implements Runnable {
 		if(destinationList.size() > 0)
 		{
 			Point2D newDestination = getDestinationList().get(0);
+			String address = RouteDispatcher.reverseGeocoding(newDestination);
+			System.out.println("Vehicle #" + getId() + " departing to destination " + address + ".");
 			Point2D currentLocation = getCoordinates();
 			route = RouteDispatcher.getRouteFromCoordinates(currentLocation, newDestination);
 			getDestinationList().remove(0);
@@ -267,7 +272,7 @@ public class VehicleRunnable implements Runnable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        VehicleRunnable that = (VehicleRunnable) o;
+        Vehicle that = (Vehicle) o;
         return id == that.id;
     }
 

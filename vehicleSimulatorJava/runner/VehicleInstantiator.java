@@ -8,12 +8,15 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import vehicle.VehicleRunnable;
+
+import vehicle.Vehicle;
 import vehicleManager.VehicleManager;
 
+/*
+ * @author Amanda Lewis
+ * Created on 8-17-2019
+ */
 public class VehicleInstantiator {
-
-	public static int vehicleCount = 0;
 
 	public static void main(String[] args) {
 
@@ -28,6 +31,7 @@ public class VehicleInstantiator {
 		{
 			printMenu();
 			choice = sc.nextInt();
+			sc.nextLine();
 			if (choice < 1 || choice > 3)
 			{
 				System.out.println("Choice must be between 1 and 3!");
@@ -37,7 +41,7 @@ public class VehicleInstantiator {
 				if (choice == 1)
 				{
 					System.out.println("Adding vehicle #" + vm.size());
-					VehicleRunnable vehicle = new VehicleRunnable(vm.size(), (new Point2D.Double(-97.7437,30.2711)), 8*1000);
+					Vehicle vehicle = new Vehicle(vm.size(), (new Point2D.Double(-97.7437,30.2711)), 8*1000);
 					vm.add(vehicle);
 					vehicleExecutor.execute(vehicle);
 				}
@@ -52,12 +56,14 @@ public class VehicleInstantiator {
 					}
 					else
 					{
+						System.out.println("Directing vehicle #" + vm.get(vehicleIndex).getId() + " to " + address + ".");
 						vm.get(vehicleIndex).addAddressToDestinationList(address);
 					}
 				}
 			}
 
 		}
+		sc.close();
 		vm.values().forEach(vehicleRunnable -> vehicleRunnable.shouldRun.set(false));
 		System.out.println("Vehicles shutting down");
 		vehicleExecutor.shutdown();

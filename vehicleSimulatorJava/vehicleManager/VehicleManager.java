@@ -7,18 +7,22 @@ import java.util.HashMap;
 import java.util.List;
 
 import routing.RouteDispatcher;
-import vehicle.VehicleRunnable;
+import vehicle.Vehicle;
 
+/*
+ * @author Amanda Lewis
+ * Created on 8-17-2019
+ */
 public class VehicleManager {
 
 	private final static Point2D POINT_NOT_FOUND = new Point2D.Double(-1, -1);
 	
-	private List<VehicleRunnable> vehicles;
+	private List<Vehicle> vehicles;
 	private int vehicleCount;
 
 	public VehicleManager()
 	{
-		vehicles = new ArrayList<VehicleRunnable>();
+		vehicles = new ArrayList<Vehicle>();
 		vehicleCount = 0;
 	}
 	
@@ -30,7 +34,7 @@ public class VehicleManager {
 	/*
 	 * Get a vehicle object by index
 	 */
-	public VehicleRunnable get(int index)
+	public Vehicle get(int index)
 	{
 		return vehicles.get(index);
 	}
@@ -38,7 +42,7 @@ public class VehicleManager {
 	/*
 	 * Add a vehicle object
 	 */
-	public void add(VehicleRunnable vehicle)
+	public void add(Vehicle vehicle)
 	{
 		vehicles.add(vehicle);
 		vehicleCount++;
@@ -47,9 +51,9 @@ public class VehicleManager {
 	/*
 	 * Return a collection of the values in vehicles
 	 */
-	public Collection<VehicleRunnable> values()
+	public Collection<Vehicle> values()
 	{
-		Collection<VehicleRunnable> c = vehicles;
+		Collection<Vehicle> c = vehicles;
 		return c;
 	}
 	
@@ -123,7 +127,7 @@ public class VehicleManager {
 		{
 			for (int g = 0; g < vehicles.size(); g++)
 			{
-				VehicleRunnable vehicle = vehicles.get(g);
+				Vehicle vehicle = vehicles.get(g);
 				int destListSize = vehicle.getDestinationList().size();
 				if (destListSize == preferredDestListSize)
 				{
