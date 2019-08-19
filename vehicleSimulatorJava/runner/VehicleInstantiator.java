@@ -152,7 +152,7 @@ public class VehicleInstantiator {
 		}
 		sc.close();
 		vm.values().forEach(vehicle -> vehicle.shouldRun.set(false));
-		System.out.println("Vehicles shutting down");
+		System.out.println("Initiating shutdown process...");
 		vehicleExecutor.shutdown();
 
 		/*

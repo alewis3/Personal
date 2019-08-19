@@ -95,10 +95,10 @@ public class Vehicle implements Runnable {
 			File file = new File(fileToWrite);
 			file.getParentFile().mkdirs();
 			FileWriter fw = new FileWriter(file, true);
-			
+
 			fw.write("** Vehicle simulation started at: " + dateToStringFormat.format(getCurrentDateTime()) + " **\n");
 			fw.flush();
-			
+
 			// This while loop will run until the shutdown command is given
 			while (shouldRun.get())
 			{
@@ -116,18 +116,21 @@ public class Vehicle implements Runnable {
 						fw.write(toString());
 						count = 0;
 					}
-					
+
 					// grab the first coordinate in the route and remove it after that.
 					coordinates = route.get(0);
 					route.remove(0);
-					
+
 					// when the route is empty set the vehicle status to arrived
 					if (route.isEmpty())
 					{
 						setStatus(VehicleStatus.ARRIVED);
 						String address = RouteDispatcher.reverseGeocoding(getCoordinates());
-						fw.write("\n\n** Vehicle #" + getId() + " arrived at " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **");
-						System.out.println("\n** Vehicle #" + getId() + " arrived at " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **");
+						String arrivedUpdate = "\n** Vehicle #" + getId() + " arrived at " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **";
+						fw.write("\n" + arrivedUpdate);
+						System.out.println(arrivedUpdate);
+						// if the destination list has more items in it, get the next route
+						getNextRoute(fw);
 					}
 					try {
 						// sleep one second and add to count same number of seconds
@@ -138,29 +141,22 @@ public class Vehicle implements Runnable {
 					}
 				}
 				/*
-				 * This sections pertains to wen the vehicle does not have a route
+				 * This sections pertains to when the vehicle does not have a route
 				 */
 				if (status == VehicleStatus.AVAILABLE || status == VehicleStatus.ARRIVED)
 				{
-					// if the destination list has more items in it, get the next route
-					if(destinationList.size() > 0)
-					{
-						getNextRoute(fw);
+					// otherwise print toString/status and make sure the status is available and not arrived
+					fw.write(toString());
+					setStatus(VehicleStatus.AVAILABLE);
+					try {
+						Thread.sleep(delay);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
 					}
-					else
-					{
-						// otherwise print toString/status and make sure the status is available and not arrived
-						fw.write(toString());
-						setStatus(VehicleStatus.AVAILABLE);
-						try {
-							Thread.sleep(delay);
-						} catch (InterruptedException e) {
-							e.printStackTrace();
-						}
-					}
+
 				} 
 			} // end of shouldRun while loop
-			
+
 			/*
 			 * Write shutting down date/time to file and close file writer
 			 */
@@ -173,7 +169,7 @@ public class Vehicle implements Runnable {
 			e.printStackTrace();
 			System.exit(0);
 		}
-		
+
 	}
 
 	public int getId()
@@ -224,7 +220,7 @@ public class Vehicle implements Runnable {
 		return route;
 	}
 
-	public Vehicle setRoute(List<Point2D> route) 
+	private Vehicle setRoute(List<Point2D> route) 
 	{
 		this.route = route;
 		return this;
@@ -247,7 +243,7 @@ public class Vehicle implements Runnable {
 
 	public Point2D getRouteStartCoordinates()
 	{
-		Point2D coords = new Point2D.Double(-1,-1);
+		Point2D coords = NOT_FOUND;
 		if (route.size() > 0)
 		{
 			coords = route.get(0);
@@ -257,14 +253,14 @@ public class Vehicle implements Runnable {
 
 	public Point2D getRouteEndCoordinates()
 	{
-		Point2D coords = new Point2D.Double(-1,-1);
+		Point2D coords = NOT_FOUND;
 		if (route.size() > 0)
 		{
 			coords = route.get((route.size() - 1));
 		}
 		return coords;
 	}
-	
+
 	public String getRouteStartAddress()
 	{
 		String retAddress = "No route.";
@@ -275,7 +271,7 @@ public class Vehicle implements Runnable {
 		}
 		return retAddress;
 	}
-	
+
 	public String getRouteEndAddress()
 	{
 		String retAddress = "No route.";
@@ -299,7 +295,7 @@ public class Vehicle implements Runnable {
 		return destinationList;
 	}
 
-	public Vehicle setDestinationList(List<Point2D> list)
+	private Vehicle setDestinationList(List<Point2D> list)
 	{
 		destinationList = list;
 		return this;
@@ -310,7 +306,7 @@ public class Vehicle implements Runnable {
 		destinationList.add(newDest);
 		return this;
 	}
-	
+
 	public Vehicle addAddressToDestinationList(String address)
 	{
 		Point2D point = RouteDispatcher.forwardGeocoding(address);
@@ -318,45 +314,46 @@ public class Vehicle implements Runnable {
 		return this;
 	}
 
-	public void getNextRoute(FileWriter fw)
+	private void getNextRoute(FileWriter fw)
 	{
 		if(destinationList.size() > 0)
 		{
 			Point2D newDestination = getDestinationList().get(0);
 			String address = RouteDispatcher.reverseGeocoding(newDestination);
+			Point2D currentLocation = getCoordinates();
+			setRoute(RouteDispatcher.getRouteFromCoordinates(currentLocation, newDestination));
+			getDestinationList().remove(0);
+			String departingUpdate = "\n** Vehicle #" + getId() + " departing to destination " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **";
 			try {
-				fw.write("\n\n** Vehicle #" + getId() + " departing to destination " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **");
+				fw.write("\n" + departingUpdate);
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			System.out.println("\n** Vehicle #" + getId() + " departing to destination " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **");
-			Point2D currentLocation = getCoordinates();
-			route = RouteDispatcher.getRouteFromCoordinates(currentLocation, newDestination);
-			getDestinationList().remove(0);
+			System.out.println(departingUpdate);
 			setStatus(VehicleStatus.IN_TRANSIT);
 		}
 	}
-	
-	private Date getCurrentDateTime()
+
+	public Date getCurrentDateTime()
 	{
 		return new Date();
 	}
-	
+
 	public boolean isStillRunning()
 	{
 		return isAlive;
 	}
 
 	@Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Vehicle that = (Vehicle) o;
-        return id == that.id;
-    }
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Vehicle that = (Vehicle) o;
+		return id == that.id;
+	}
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id);
-    }
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
 }
