@@ -128,7 +128,6 @@ public class Vehicle implements Runnable {
 						String address = RouteDispatcher.reverseGeocoding(getCoordinates());
 						fw.write("\n\n** Vehicle #" + getId() + " arrived at " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **");
 						System.out.println("\n** Vehicle #" + getId() + " arrived at " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **");
-
 					}
 					try {
 						// sleep one second and add to count same number of seconds

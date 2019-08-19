@@ -134,7 +134,7 @@ public class RouteDispatcher {
 			e.printStackTrace();
 		}
 		JSONArray features = (JSONArray) jsonObject.get("features");
-		if (!features.isEmpty()) 
+		if (features != null && !features.isEmpty()) 
 		{
 			JSONArray center = (JSONArray) ((JSONObject) features.get(0)).get("center");
 			return new Point2D.Double((Double) center.get(0), (Double) center.get(1));
