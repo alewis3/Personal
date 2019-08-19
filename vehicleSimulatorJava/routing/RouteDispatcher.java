@@ -91,26 +91,9 @@ public class RouteDispatcher {
 	 */
 	public static Double getDistanceFromCoordinates(Point2D starting, Point2D destination)
 	{
-		String url = buildRoutingURL(starting, destination);
-		String response = getRequest(url);
-		JSONParser p = new JSONParser();
-		JSONObject jsonObject = new JSONObject();
-		try {
-			jsonObject = (JSONObject) p.parse(response);
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		JSONArray legs = (JSONArray) ((JSONObject) ((JSONArray) jsonObject.get("routes")).get(0)).get("legs");
-		double distance;
-		if ((((JSONObject) legs.get(0)).get("distance")).getClass().equals(Long.class))
-		{
-			long distanceLong = (long) ((JSONObject) legs.get(0)).get("distance");
-			distance = (double) distanceLong;
-		}
-		else
-		{
-			distance = (double) ((JSONObject) legs.get(0)).get("distance");
-		}
+		// calculate using the distance formula
+		// sqrt((x_2 - x_1)^2 + (y_2 - y_1)^2)
+		Double distance = Math.sqrt(Math.pow((destination.getX() - starting.getX()), 2) + Math.pow((destination.getY() - starting.getY()), 2));
 
 		return distance;
 	}
