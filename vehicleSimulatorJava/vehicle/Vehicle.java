@@ -100,7 +100,7 @@ public class Vehicle implements Runnable {
 			fw.flush();
 
 			// This while loop will run until the shutdown command is given
-			while (shouldRun.get())
+			while (shouldRun.get() && !Thread.interrupted())
 			{
 				/*
 				 * This section of the code pertains to when the vehicle is IN_TRANSIT and has a route to follow
@@ -137,7 +137,9 @@ public class Vehicle implements Runnable {
 						Thread.sleep(1000);
 						count += 1000;
 					} catch (InterruptedException e) {
+						isAlive = false;
 						e.printStackTrace();
+						System.exit(0);
 					}
 				}
 				/*
@@ -152,7 +154,9 @@ public class Vehicle implements Runnable {
 					try {
 						Thread.sleep(delay);
 					} catch (InterruptedException e) {
+						isAlive = false;
 						e.printStackTrace();
+						System.exit(0);
 					}
 
 				} 
