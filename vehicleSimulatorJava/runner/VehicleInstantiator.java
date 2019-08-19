@@ -38,7 +38,7 @@ public class VehicleInstantiator {
 		/*
 		 * Grab a filename for the user to use for each of the vehicles created in this run
 		 */
-		System.out.println("Please enter a folder name for all the output files of the vehicle for this run. \nThe directory will be /Users/patricklewis/VehicleTestOutput/. \nEnter only alphanumeric characters as well as dashes (-) and underscores (_).");
+		System.out.println("Please enter a folder name for all the output files of the vehicle for this run. \nEnter only alphanumeric characters as well as dashes (-) and underscores (_).");
 		String fileName = null;
 		while (fileName == null)
 		{

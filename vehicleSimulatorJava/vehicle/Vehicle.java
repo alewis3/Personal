@@ -148,6 +148,7 @@ public class Vehicle implements Runnable {
 					// otherwise print toString/status and make sure the status is available and not arrived
 					fw.write(toString());
 					setStatus(VehicleStatus.AVAILABLE);
+					getNextRoute(fw);
 					try {
 						Thread.sleep(delay);
 					} catch (InterruptedException e) {
