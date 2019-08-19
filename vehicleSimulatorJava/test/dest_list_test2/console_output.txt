@@ -1,0 +1,53 @@
+*** Thank you for starting the Java Vehicle Simulator. 
+Created by Amanda Lewis 2019. ***
+Please enter a folder name for all the output files of the vehicle for this run.  
+Enter only alphanumeric characters as well as dashes (-) and underscores (_).
+dest_list_test2
+
+Please pick an option from 1 to 3: 
+1) Add a vehicle 
+2) Direct a vehicle to an address 
+3) Exit
+
+1
+Adding vehicle #0
+
+Please pick an option from 1 to 3: 
+1) Add a vehicle 
+2) Direct a vehicle to an address 
+3) Exit
+
+2
+Please enter the address in Austin where you need a vehicle sent. 
+Enter a valid address with more than three characters and no semicolons.
+5207 Brodie Lane
+Directing vehicle #0 to 5207 Brodie Lane now.
+
+Please pick an option from 1 to 3: 
+1) Add a vehicle 
+2) Direct a vehicle to an address 
+3) Exit
+
+
+** Vehicle #0 departing to destination 5207 Brodie Lane, Austin, Texas 78745, United States @ 08/19/2019 14:31:12 **
+2
+Please enter the address in Austin where you need a vehicle sent. 
+Enter a valid address with more than three characters and no semicolons.
+6104 Emerald Forest Drive
+Directing vehicle #0 to 6104 Emerald Forest Drive now.
+
+Please pick an option from 1 to 3: 
+1) Add a vehicle 
+2) Direct a vehicle to an address 
+3) Exit
+
+3
+Initiating shutdown process...
+
+** Vehicle #0 arrived at 5207 Brodie Lane, Austin, Texas 78745, United States @ 08/19/2019 14:35:56 **
+
+** Vehicle #0 departing to destination 6104 Emerald Forest Drive, Austin, Texas 78745, United States @ 08/19/2019 14:35:56 **
+
+** Vehicle #0 arrived at 6104 Emerald Forest Drive, Austin, Texas 78745, United States @ 08/19/2019 14:38:36 **
+All vehicles shut down
+Shutdown hook enabled
