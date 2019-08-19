@@ -26,6 +26,17 @@ public class VehicleInstantiator {
 
 		Scanner sc = new Scanner(System.in);
 
+		Runtime.getRuntime().addShutdownHook(new Thread()
+		{
+			public void run()
+			{
+				System.out.println("Shutdown hook enabled");
+				sc.close();
+				vm.values().forEach(vehicle -> vehicle.shouldRun.set(false));
+				vehicleExecutor.shutdown();
+			}
+		});
+		
 		/*
 		 * This regex will be used to verify the file name. 
 		 * It can contain alphanumeric characters and dashes and underscores
@@ -50,17 +61,6 @@ public class VehicleInstantiator {
 				fileName = null;
 			}
 		}
-
-		Runtime.getRuntime().addShutdownHook(new Thread()
-		{
-			public void run()
-			{
-				System.out.println("Shutdown hook enabled");
-				sc.close();
-				vm.values().forEach(vehicle -> vehicle.shouldRun.set(false));
-				vehicleExecutor.shutdown();
-			}
-		});
 
 		/*
 		 * Here we will grab the user's input and keep printing the menu until they enter something valid.
