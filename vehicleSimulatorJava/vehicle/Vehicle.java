@@ -23,8 +23,8 @@ public class Vehicle implements Runnable {
 
 	public final static Point2D DEFAULT_START = new Point2D.Double(-97.753438, 30.229688);
 	public final static Point2D NOT_FOUND = new Point2D.Double(-1, -1);
-
 	public final AtomicBoolean shouldRun;
+	
 	private boolean isAlive;
 	private final Random random = new Random();
 	private int id;
@@ -138,8 +138,8 @@ public class Vehicle implements Runnable {
 						count += 1000;
 					} catch (InterruptedException e) {
 						isAlive = false;
+						shouldRun.set(false);
 						e.printStackTrace();
-						System.exit(0);
 					}
 				}
 				/*
@@ -155,8 +155,8 @@ public class Vehicle implements Runnable {
 						Thread.sleep(delay);
 					} catch (InterruptedException e) {
 						isAlive = false;
+						shouldRun.set(false);
 						e.printStackTrace();
-						System.exit(0);
 					}
 
 				} 
@@ -165,7 +165,9 @@ public class Vehicle implements Runnable {
 			/*
 			 * Write shutting down date/time to file and close file writer
 			 */
-			fw.write("\n\n*** Vehicle #" + getId() + " shutting down at " + dateToStringFormat.format(getCurrentDateTime()) + " ***");
+			String shutDownStmt = "\n*** Vehicle #" + getId() + " shutting down at " + dateToStringFormat.format(getCurrentDateTime()) + " ***";
+			fw.write("\n" + shutDownStmt);
+			System.out.println(shutDownStmt);
 			fw.flush();
 			fw.close();
 			isAlive = false;
