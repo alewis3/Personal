@@ -1,0 +1,86 @@
+** Vehicle simulation started at: 08/26/2019 10:51:32 **
+
+
+** Report date/time:08/26/2019 10:51:32
+Vehicle ID #1
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/26/2019 10:51:42
+Vehicle ID #1
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/26/2019 10:51:52
+Vehicle ID #1
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/26/2019 10:52:02
+Vehicle ID #1
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/26/2019 10:52:12
+Vehicle ID #1
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/26/2019 10:52:22
+Vehicle ID #1
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/26/2019 10:52:32
+Vehicle ID #1
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/26/2019 10:52:42
+Vehicle ID #1
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/26/2019 10:52:52
+Vehicle ID #1
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/26/2019 10:53:02
+Vehicle ID #1
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Vehicle #1 departing to destination 804 Congress Avenue, Austin, Texas 78701, United States @ 08/26/2019 10:53:02 **
+
+** Report date/time:08/26/2019 10:53:22
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.741942, 30.270916)
+Vehicle Destination: 804 Congress Avenue, Austin, Texas 78701, United States **
+
+** Report date/time:08/26/2019 10:53:33
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.742777, 30.270211)
+Vehicle Destination: 804 Congress Avenue, Austin, Texas 78701, United States **
+
+** Vehicle #1 arrived at 804 Congress Avenue, Austin, Texas 78701, United States @ 08/26/2019 10:53:35 **
+
+** Report date/time:08/26/2019 10:53:36
+Vehicle ID #1
+Vehicle Status: ARRIVED
+Vehicle Coordinates: (-97.742697, 30.270417)
+Vehicle Destination: No route. **
+
+*** Vehicle #1 shutting down at 08/26/2019 10:53:46 ***
