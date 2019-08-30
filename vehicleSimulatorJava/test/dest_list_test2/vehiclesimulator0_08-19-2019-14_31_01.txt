@@ -1,0 +1,282 @@
+** Vehicle simulation started at: 08/19/2019 14:31:01 **
+
+
+** Report date/time:08/19/2019 14:31:01
+Vehicle ID #0
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/19/2019 14:31:11
+Vehicle ID #0
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Vehicle #0 departing to destination 5207 Brodie Lane, Austin, Texas 78745, United States @ 08/19/2019 14:31:12 **
+
+** Report date/time:08/19/2019 14:31:32
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.743748, 30.269452)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:31:42
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.741246, 30.268657)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:31:52
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.738891, 30.268)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:32:02
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.735533, 30.267063)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:32:12
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.735067, 30.265797)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:32:23
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.735697, 30.263123)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:32:33
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.737235, 30.258677)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:32:43
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.736336, 30.252337)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:32:53
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.735175, 30.246008)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:33:03
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.735489, 30.24427)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:33:13
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.736454, 30.242005)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:33:23
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.741663, 30.233159)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:33:34
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.747375, 30.223646)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:33:44
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.750704, 30.218188)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:33:54
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.754138, 30.21799)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:34:04
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.761409, 30.221565)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:34:14
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.770678, 30.227281)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:34:24
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.776777, 30.227778)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:34:34
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.78555, 30.228823)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:34:45
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.796476, 30.233413)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:34:55
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.803223, 30.232153)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:35:05
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.808567, 30.23309)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:35:15
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.813996, 30.23387)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:35:25
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.817996, 30.233478)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:35:35
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.815853, 30.23246)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:35:45
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.817595, 30.23112)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:35:56
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.818986, 30.230973)
+Vehicle Destination: 5207 Brodie Lane, Austin, Texas 78745, United States **
+
+** Vehicle #0 arrived at 5207 Brodie Lane, Austin, Texas 78745, United States @ 08/19/2019 14:35:56 **
+
+** Vehicle #0 departing to destination 6104 Emerald Forest Drive, Austin, Texas 78745, United States @ 08/19/2019 14:35:56 **
+
+** Report date/time:08/19/2019 14:36:06
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.818416, 30.232486)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:36:16
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.812424, 30.233066)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:36:27
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.807309, 30.232043)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:36:37
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.801197, 30.232223)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:36:47
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.795061, 30.232936)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:36:57
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.7837, 30.228062)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:37:07
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.77466, 30.22734)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:37:17
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.770912, 30.226821)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:37:28
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.770432, 30.224971)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:37:38
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.774762, 30.218041)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:37:48
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.780262, 30.218209)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:37:58
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.784205, 30.216362)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:38:08
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.787233, 30.21271)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:38:18
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.787055, 30.210772)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Report date/time:08/19/2019 14:38:29
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.789155, 30.207723)
+Vehicle Destination: 6104 Emerald Forest Drive, Austin, Texas 78745, United States **
+
+** Vehicle #0 arrived at 6104 Emerald Forest Drive, Austin, Texas 78745, United States @ 08/19/2019 14:38:36 **
+
+** Report date/time:08/19/2019 14:38:37
+Vehicle ID #0
+Vehicle Status: ARRIVED
+Vehicle Coordinates: (-97.789992, 30.206133)
+Vehicle Destination: No route. **
+
+*** Vehicle #0 shutting down at 08/19/2019 14:38:47 ***

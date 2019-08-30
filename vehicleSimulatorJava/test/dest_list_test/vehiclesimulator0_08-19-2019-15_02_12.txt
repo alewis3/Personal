@@ -1,0 +1,644 @@
+** Vehicle simulation started at: 08/19/2019 15:02:12 **
+
+
+** Report date/time:08/19/2019 15:02:12
+Vehicle ID #0
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/19/2019 15:02:22
+Vehicle ID #0
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/19/2019 15:02:32
+Vehicle ID #0
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/19/2019 15:02:42
+Vehicle ID #0
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Vehicle #0 departing to destination Ranch 2 Runway, 27490 Ranch Road 12, Dripping Springs, Texas 78620, United States @ 08/19/2019 15:02:42 **
+
+** Report date/time:08/19/2019 15:03:02
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.745593, 30.270884)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:03:13
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.746282, 30.269042)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:03:23
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.749603, 30.269968)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:03:33
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.752445, 30.270941)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:03:43
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.754364, 30.270763)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:03:53
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.755774, 30.267921)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:04:03
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.756656, 30.267445)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:04:13
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.758657, 30.268144)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:04:23
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.762571, 30.27022)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:04:33
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.766242, 30.274436)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:04:44
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.767827, 30.277292)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:04:54
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.769156, 30.277652)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:05:04
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.770406, 30.27663)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:05:15
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.774061, 30.271075)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:05:25
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.780538, 30.266812)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:05:35
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.7843, 30.265352)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:05:45
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.787723, 30.264493)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:05:55
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.799128, 30.257764)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:06:05
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.804351, 30.254366)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:06:15
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.806097, 30.251232)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:06:26
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.807324, 30.24594)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:06:36
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.809558, 30.24373)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:06:46
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.819937, 30.238671)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:06:56
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.826022, 30.23672)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:07:06
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.832027, 30.236717)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:07:16
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.847608, 30.236204)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:07:26
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.85603, 30.235437)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:07:37
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.860109, 30.23535)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:07:47
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.862295, 30.23482)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:07:57
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.864425, 30.234063)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:08:07
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.867055, 30.234016)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:08:17
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.869576, 30.234031)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:08:27
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.87281, 30.233916)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:08:37
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.875776, 30.232916)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:08:48
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.880059, 30.230337)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:08:58
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.884064, 30.229061)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:09:08
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.88682, 30.229126)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:09:18
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.892042, 30.229576)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:09:28
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.896497, 30.230602)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:09:38
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.901901, 30.232261)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:09:48
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.911061, 30.234506)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:09:59
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.916391, 30.233692)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:10:09
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.929323, 30.231412)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:10:19
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.938132, 30.229586)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:10:29
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.947785, 30.225616)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:10:39
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.95541, 30.22228)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:10:49
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.9607, 30.218877)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:10:59
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.964885, 30.215461)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:11:10
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.968203, 30.211581)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:11:20
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.969841, 30.210397)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:11:30
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.974586, 30.207967)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:11:40
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.985403, 30.202592)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:11:50
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.996625, 30.197048)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:12:00
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.000169, 30.196375)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:12:10
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.009086, 30.196409)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:12:21
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.018238, 30.197375)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:12:31
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.032338, 30.194419)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:12:41
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.042695, 30.193906)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:12:51
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.051785, 30.195033)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:13:01
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.05996, 30.194988)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:13:11
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.063208, 30.19342)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:13:22
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.06692, 30.192374)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:13:32
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.077548, 30.191663)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:13:42
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.084039, 30.191556)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:13:52
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.087508, 30.190694)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Report date/time:08/19/2019 15:14:02
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.086924, 30.189245)
+Vehicle Destination: Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States **
+
+** Vehicle #0 arrived at Tina's Nail Spa, 27490 Ranch Rd 12 Bldg 2 Ste 7, Dripping Springs, Texas 78620, United States @ 08/19/2019 15:14:08 **
+
+** Vehicle #0 departing to destination 505 Honeycomb Ridge, Austin, Texas 78746, United States @ 08/19/2019 15:14:09 **
+
+** Report date/time:08/19/2019 15:14:13
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.086822, 30.189961)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:14:23
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.087463, 30.189866)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:14:33
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.085011, 30.191552)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:14:43
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.08097, 30.191571)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:14:53
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.071701, 30.191963)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:15:03
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.064235, 30.192969)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:15:13
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.060749, 30.194712)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:15:23
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.053167, 30.195159)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:15:33
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.04409, 30.193983)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:15:43
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.033762, 30.194222)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:15:54
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.019311, 30.197304)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:16:04
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.012773, 30.196804)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:16:14
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-98.004218, 30.196317)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:16:24
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.99808, 30.196663)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:16:34
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.989552, 30.20049)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:16:44
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.975942, 30.20735)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:16:55
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.970239, 30.21018)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:17:06
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.968559, 30.211268)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:17:16
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.966608, 30.213378)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:17:26
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.962058, 30.218005)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:17:36
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.955981, 30.221937)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:17:46
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.949978, 30.224708)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:17:56
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.939946, 30.228861)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:18:07
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.93353, 30.230668)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:18:17
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.920644, 30.23294)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:18:27
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.911794, 30.234463)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:18:37
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.907989, 30.234114)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:18:47
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.89856, 30.231221)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:18:57
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.893584, 30.229817)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:19:07
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.888231, 30.229245)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:19:18
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.884773, 30.229005)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:19:28
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.880912, 30.229902)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:19:38
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.877428, 30.2318)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:19:48
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.873914, 30.233483)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:19:58
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.871711, 30.23397)
+Vehicle Destination: 505 Honeycomb Ridge, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:20:08
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.867722, 30.234066)
+Vehicle Destination: 505 Ho

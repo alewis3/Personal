@@ -1,0 +1,538 @@
+** Vehicle simulation started at: 08/19/2019 15:02:13 **
+
+
+** Report date/time:08/19/2019 15:02:13
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/19/2019 15:02:23
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/19/2019 15:02:33
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/19/2019 15:02:43
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/19/2019 15:02:53
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/19/2019 15:03:03
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/19/2019 15:03:13
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/19/2019 15:03:23
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:08/19/2019 15:03:33
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Vehicle #2 departing to destination 1319 Wilderness Drive, Austin, Texas 78746, United States @ 08/19/2019 15:03:33 **
+
+** Report date/time:08/19/2019 15:03:53
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.745593, 30.270884)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:04:04
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.746282, 30.269042)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:04:14
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.749603, 30.269968)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:04:24
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.752445, 30.270941)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:04:34
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.754364, 30.270763)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:04:44
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.755774, 30.267921)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:04:54
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.756656, 30.267445)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:05:04
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.758657, 30.268144)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:05:15
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.762571, 30.27022)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:05:25
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.766242, 30.274436)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:05:35
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.767827, 30.277292)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:05:45
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.769156, 30.277652)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:05:55
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.770406, 30.27663)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:06:05
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.774061, 30.271075)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:06:15
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.7797, 30.267504)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:06:26
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.78255, 30.266435)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:06:36
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.784878, 30.266986)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:06:46
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.786159, 30.268482)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:06:56
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.786444, 30.270516)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:07:06
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.787787, 30.271305)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:07:16
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.790627, 30.270732)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:07:26
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.793747, 30.271096)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:07:37
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.797071, 30.272031)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Report date/time:08/19/2019 15:07:47
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.799721, 30.271188)
+Vehicle Destination: 1320 Wilderness Drive, Austin, Texas 78746, United States **
+
+** Vehicle #2 arrived at 1320 Wilderness Drive, Austin, Texas 78746, United States @ 08/19/2019 15:07:56 **
+
+** Vehicle #2 departing to destination 2404 East 8th Street, Austin, Texas 78702, United States @ 08/19/2019 15:07:56 **
+
+** Report date/time:08/19/2019 15:07:57
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.800916, 30.26787)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:08:07
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.804096, 30.269215)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:08:18
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.808485, 30.262815)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:08:28
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.80535, 30.260053)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:08:38
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.802737, 30.258527)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:08:48
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.803018, 30.257364)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:08:58
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.803934, 30.256412)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:09:08
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.804199, 30.255065)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:09:18
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.806233, 30.252274)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:09:28
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.804024, 30.247358)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:09:38
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.801278, 30.242301)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:09:48
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.797829, 30.235414)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:09:59
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.793362, 30.232298)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:10:09
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.781954, 30.227795)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:10:19
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.771813, 30.227391)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:10:29
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.763178, 30.222344)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:10:39
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.75575, 30.218376)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:10:49
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.751727, 30.216468)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:10:59
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.747869, 30.221886)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:11:10
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.744597, 30.227836)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:11:20
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.738661, 30.237845)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:11:30
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.735284, 30.243584)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:11:40
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.734867, 30.24599)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:11:50
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.735567, 30.250564)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:12:00
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.736745, 30.255138)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:12:11
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.73698, 30.258541)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:12:21
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.735705, 30.262634)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:12:31
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.734778, 30.26476)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:12:41
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.734019, 30.266126)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:12:51
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.733138, 30.266363)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:13:01
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.728874, 30.264919)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:13:11
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.724246, 30.263314)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:13:22
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.720765, 30.262204)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Report date/time:08/19/2019 15:13:32
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.717543, 30.26203)
+Vehicle Destination: 2402 East 8th Street, Austin, Texas 78702, United States **
+
+** Vehicle #2 arrived at 2402 East 8th Street, Austin, Texas 78702, United States @ 08/19/2019 15:13:39 **
+
+** Vehicle #2 departing to destination 3001 S Congress Ave, Austin, Texas 78704, United States @ 08/19/2019 15:13:39 **
+
+** Report date/time:08/19/2019 15:13:42
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.715532, 30.263893)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:13:52
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.719319, 30.26563)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:14:02
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.724908, 30.267618)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:14:12
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.727396, 30.270717)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:14:22
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.729204, 30.272294)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:14:32
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.731646, 30.272025)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:14:43
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.731074, 30.274254)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:14:53
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.732055, 30.273473)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:15:03
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.732608, 30.27146)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:15:13
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.736241, 30.261976)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:15:23
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.737259, 30.257543)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:15:33
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.735523, 30.248493)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:15:43
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.735261, 30.245472)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:15:54
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.735882, 30.243381)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:16:04
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.736945, 30.241162)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:16:14
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.742704, 30.231509)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:16:24
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.745312, 30.227484)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:16:34
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.748971, 30.224411)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Report date/time:08/19/2019 15:16:44
+Vehicle ID #2
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.753666, 30.227643)
+Vehicle Destination: Theatre Pass, Austin, Texas 78704, United States **
+
+** Vehicle #2 arrived at Theatre Pass, Austin, Texas 78704, United States @ 08/19/2019 15:16:49 **
+
+** Report date/time:08/19/2019 15:16:50
+Vehicle ID #2
+Vehicle Status: ARRIVED
+Vehicle Coordinates: (-97.753041, 30.228735)
+Vehicle Destination: No route. **
+
+*** Vehicle #2 shutting down at 08/19/2019 15:17:00 ***
