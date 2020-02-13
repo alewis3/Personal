@@ -1,4 +1,4 @@
-package vehicle;
+package test;
 
 import routing.RouteDispatcher;
 

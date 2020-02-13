@@ -17,10 +17,11 @@ import routing.RouteDispatcher;
 
 /*
  * @author Amanda Lewis
- * Created on 8-17-2019
+ * Refactored on 2-11-2020
  */
 public class Vehicle implements Runnable {
 
+	public final static int DEFAULT_ID = 9999;
 	public final static Point2D DEFAULT_START = new Point2D.Double(-97.753438, 30.229688);
 	public final static Point2D NOT_FOUND = new Point2D.Double(-1, -1);
 	public final AtomicBoolean shouldRun;
@@ -29,10 +30,10 @@ public class Vehicle implements Runnable {
 	private final Random random = new Random();
 	private int id;
 	private VehicleStatus status;
-	private Point2D coordinates = new Point2D.Double();
-	private List<Point2D> route = new ArrayList<Point2D>();
-	private List<Point2D> destinationList = new ArrayList<Point2D>();
-	private final long delay;
+	private Point2D coordinates;
+	private List<Point2D> route = new ArrayList<>();
+	private List<Point2D> destinationList = new ArrayList<>();
+	private final long delay; // in milliseconds (1 second == 1000 milliseconds)
 	private final String fileToWrite;
 	private final DateFormat dateFileFormat = new SimpleDateFormat("MM-dd-yyyy-HH_mm_ss");
 	private final DateFormat dateToStringFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
@@ -49,7 +50,7 @@ public class Vehicle implements Runnable {
 		status = VehicleStatus.AVAILABLE;
 		coordinates = DEFAULT_START;
 		delay = 5*1000;
-		fileToWrite = "test/default/vehiclesimulator" + id + "_" + dateFileFormat.format(getCurrentDateTime()) + ".txt";
+		fileToWrite = "test/default/vehiclesimulator" + id + "_" + getCurrentDateTimeFile() + ".txt";
 	}
 
 	/*
@@ -69,7 +70,7 @@ public class Vehicle implements Runnable {
 		status = VehicleStatus.AVAILABLE;
 		this.coordinates = coordinates;
 		this.delay = delay;
-		fileToWrite = "test/" + folderName + "/vehiclesimulator" + id + "_" + dateFileFormat.format(getCurrentDateTime()) + ".txt";
+		fileToWrite = "test/" + folderName + "/vehiclesimulator" + id + "_" + getCurrentDateTimeFile() + ".txt";
 	}
 
 	/*
@@ -78,7 +79,7 @@ public class Vehicle implements Runnable {
 	 */
 	public String toString()
 	{
-		return "\n\n** Report date/time:" + dateToStringFormat.format(getCurrentDateTime()) + "\nVehicle ID #" + getId() + 
+		return "\n\n** Report date/time:" + getCurrentDateTimeString() + "\nVehicle ID #" + getId() +
 				"\nVehicle Status: " + getStatusString() + 
 				"\nVehicle Coordinates: " + getPrintedCoordinates() + 
 				"\nVehicle Destination: " + getRouteEndAddress() + " **";
@@ -96,7 +97,7 @@ public class Vehicle implements Runnable {
 			file.getParentFile().mkdirs();
 			FileWriter fw = new FileWriter(file, true);
 
-			fw.write("** Vehicle simulation started at: " + dateToStringFormat.format(getCurrentDateTime()) + " **\n");
+			fw.write("** Vehicle simulation started at: " + getCurrentDateTimeString() + " **\n");
 			fw.flush();
 
 			// This while loop will run until the shutdown command is given
@@ -118,7 +119,7 @@ public class Vehicle implements Runnable {
 					}
 
 					// grab the first coordinate in the route and remove it after that.
-					coordinates = route.get(0);
+					setCoordinates(route.get(0));
 					route.remove(0);
 
 					// when the route is empty set the vehicle status to arrived
@@ -126,7 +127,7 @@ public class Vehicle implements Runnable {
 					{
 						setStatus(VehicleStatus.ARRIVED);
 						String address = RouteDispatcher.reverseGeocoding(getCoordinates());
-						String arrivedUpdate = "\n** Vehicle #" + getId() + " arrived at " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **";
+						String arrivedUpdate = "\n** Vehicle #" + getId() + " arrived at " + address + " @ " + getCurrentDateTimeString() + " **";
 						fw.write("\n" + arrivedUpdate);
 						System.out.println(arrivedUpdate);
 						// if the destination list has more items in it, get the next route
@@ -165,7 +166,7 @@ public class Vehicle implements Runnable {
 			/*
 			 * Write shutting down date/time to file and close file writer
 			 */
-			String shutDownStmt = "\n*** Vehicle #" + getId() + " shutting down at " + dateToStringFormat.format(getCurrentDateTime()) + " ***";
+			String shutDownStmt = "\n*** Vehicle #" + getId() + " shutting down at " + getCurrentDateTimeString() + " ***";
 			fw.write("\n" + shutDownStmt);
 			System.out.println(shutDownStmt);
 			fw.flush();
@@ -186,7 +187,12 @@ public class Vehicle implements Runnable {
 
 	public Vehicle setId(int id) 
 	{
-		this.id = id;
+		if (this.id > 0) {
+			this.id = id;
+		}
+		else {
+			this.id = DEFAULT_ID;
+		}
 		return this;
 	}
 
@@ -314,6 +320,12 @@ public class Vehicle implements Runnable {
 		return this;
 	}
 
+	public Vehicle insertPointToDestinationList(Point2D newDest, int index)
+	{
+		destinationList.add(index, newDest);
+		return this;
+	}
+
 	public Vehicle addAddressToDestinationList(String address)
 	{
 		Point2D point = RouteDispatcher.forwardGeocoding(address);
@@ -344,6 +356,16 @@ public class Vehicle implements Runnable {
 	public Date getCurrentDateTime()
 	{
 		return new Date();
+	}
+
+	public String getCurrentDateTimeString()
+	{
+		return dateToStringFormat.format(getCurrentDateTime());
+	}
+
+	public String getCurrentDateTimeFile()
+	{
+		return dateFileFormat.format(getCurrentDateTime());
 	}
 
 	public boolean isStillRunning()

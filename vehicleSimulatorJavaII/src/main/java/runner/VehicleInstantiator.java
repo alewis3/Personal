@@ -12,7 +12,7 @@ import vehicleManager.VehicleManager;
 
 /*
  * @author Amanda Lewis
- * Created on 8-17-2019
+ * Refactored on 2-11-2020
  */
 public class VehicleInstantiator {
 
@@ -21,10 +21,10 @@ public class VehicleInstantiator {
 		/*
 		 * Instantiate vehicle manager and vehicle executor to handle the vehicles/threads
 		 */
-		VehicleManager vm = new VehicleManager();
-		ExecutorService vehicleExecutor = Executors.newCachedThreadPool();
+		final VehicleManager vm = new VehicleManager();
+		final ExecutorService vehicleExecutor = Executors.newCachedThreadPool();
 
-		Scanner sc = new Scanner(System.in);
+		final Scanner sc = new Scanner(System.in);
 
 		Runtime.getRuntime().addShutdownHook(new Thread()
 		{
@@ -44,7 +44,7 @@ public class VehicleInstantiator {
 		String regex = "^[a-zA-Z0-9-_]+$";
 		Pattern pattern = Pattern.compile(regex);
 
-		System.out.println("*** Thank you for starting the Java Vehicle Simulator. \nCreated by Amanda Lewis 2019. ***");
+		System.out.println("*** Thank you for starting the Java Vehicle Simulator II. \nCreated by Amanda Lewis 2020. ***");
 
 		/*
 		 * Grab a filename for the user to use for each of the vehicles created in this run
