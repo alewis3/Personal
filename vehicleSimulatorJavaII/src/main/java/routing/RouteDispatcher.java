@@ -282,7 +282,7 @@ public class RouteDispatcher {
 	 * Point2D coordinates: the coordinates to convert to address in (long, lat) format
 	 * 
 	 * Returns: 
-	 * The coordinates address
+	 * The coordinates address, or null if it could not be found.
 	 */
 	public static String reverseGeocoding(Point2D coordinates)
 	{
@@ -295,8 +295,14 @@ public class RouteDispatcher {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
+		String address;
 		JSONArray features = (JSONArray) jsonObject.get("features");
-		String address = (String) ((JSONObject) features.get(0)).get("place_name");
+		if (features.size() > 0) {
+			address = (String) ((JSONObject) features.get(0)).get("place_name");
+		}
+		else {
+			address = null;
+		}
 		return address;
 
 	}
@@ -371,7 +377,7 @@ public class RouteDispatcher {
 	 */
 	private static String buildGeocodingURLFromPoint(Point2D point) 
 	{
-		return MAPBOX_GEOCODING_URL + point.getY() + "," + point.getX() +
+		return MAPBOX_GEOCODING_URL + point.getX() + "," + point.getY() +
 				".json?access_token=" + MAPBOX_TOKEN;
 	}
 

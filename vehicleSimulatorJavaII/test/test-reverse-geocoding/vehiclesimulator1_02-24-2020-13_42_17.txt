@@ -1,0 +1,272 @@
+** Vehicle simulation started at: 02/24/2020 13:42:17 **
+
+
+** Report date/time:02/24/2020 13:42:17
+Vehicle ID #1
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:02/24/2020 13:42:27
+Vehicle ID #1
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Vehicle #1 departing to destination 6600 Delmonico Drive, Austin, Texas 78759, United States @ 02/24/2020 13:42:27 **
+
+** Report date/time:02/24/2020 13:42:48
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.74559, 30.270884)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:42:58
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.746284, 30.269041)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:43:08
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.749451, 30.269926)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:43:18
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.75193, 30.270746)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:43:29
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.754463, 30.271704)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:43:39
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.757141, 30.27272)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:43:49
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.760162, 30.273865)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:43:59
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.762711, 30.274834)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:44:09
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.764297, 30.275787)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:44:19
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.766594, 30.276949)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:44:29
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.766983, 30.279045)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:44:40
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.765816, 30.281689)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:44:50
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.762444, 30.287769)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:45:00
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.75824, 30.297688)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:45:10
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.758293, 30.302523)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:45:20
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.757118, 30.309446)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:45:30
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.755493, 30.331863)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:45:40
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.754997, 30.33765)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:45:51
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.750755, 30.346249)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:46:01
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.748795, 30.351866)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:46:11
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.746338, 30.355865)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:46:21
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.743393, 30.363926)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:46:31
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.741661, 30.370077)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:46:41
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.738937, 30.376303)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:46:52
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.737984, 30.378942)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:47:07
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.740456, 30.382025)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:47:17
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.745453, 30.390524)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:47:36
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.746338, 30.394718)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:47:47
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.745697, 30.398409)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:47:57
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.746895, 30.400707)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:48:07
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.748749, 30.40123)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:48:17
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.748665, 30.404396)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:48:27
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.750473, 30.40604)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:48:38
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.753502, 30.407688)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:48:48
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.75943, 30.408882)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:48:58
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.763428, 30.409687)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:49:08
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.766441, 30.410406)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:49:19
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.767586, 30.411663)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:49:29
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.768547, 30.410101)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:49:39
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.769981, 30.408079)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Report date/time:02/24/2020 13:49:49
+Vehicle ID #1
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.771591, 30.406815)
+Vehicle Destination: 6601 Delmonico Drive, Austin, Texas 78759, United States **
+
+** Vehicle #1 arrived at 6601 Delmonico Drive, Austin, Texas 78759, United States @ 02/24/2020 13:49:49 **
+
+** Report date/time:02/24/2020 13:49:50
+Vehicle ID #1
+Vehicle Status: ARRIVED
+Vehicle Coordinates: (-97.771591, 30.406815)
+Vehicle Destination: No route. **
+
+*** Vehicle #1 shutting down at 02/24/2020 13:50:00 ***

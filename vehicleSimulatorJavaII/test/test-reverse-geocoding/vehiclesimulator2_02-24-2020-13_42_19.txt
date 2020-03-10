@@ -1,0 +1,30 @@
+** Vehicle simulation started at: 02/24/2020 13:42:19 **
+
+
+** Report date/time:02/24/2020 13:42:19
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:02/24/2020 13:42:29
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:02/24/2020 13:42:39
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:02/24/2020 13:42:49
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Vehicle #2 departing to destination 60 South Pleasant Valley Road, Austin, Texas 78741, United States @ 02/24/2020 13:42:49 **
+
+*** Vehicle #2 shutting down at 02/24/2020 13:42:59 ***

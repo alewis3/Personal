@@ -33,6 +33,7 @@ public class Vehicle implements Runnable {
 	private Point2D coordinates;
 	private List<Point2D> route = new ArrayList<>();
 	private List<Point2D> destinationList = new ArrayList<>();
+	private List<String> addressList = new ArrayList<>();
 	private final long delay; // in milliseconds (1 second == 1000 milliseconds)
 	private final String fileToWrite;
 	private final DateFormat dateFileFormat = new SimpleDateFormat("MM-dd-yyyy-HH_mm_ss");
@@ -115,6 +116,7 @@ public class Vehicle implements Runnable {
 					if(count >= delay)
 					{
 						fw.write(toString());
+						fw.flush();
 						count = 0;
 					}
 
@@ -126,9 +128,10 @@ public class Vehicle implements Runnable {
 					if (route.isEmpty())
 					{
 						setStatus(VehicleStatus.ARRIVED);
-						String address = RouteDispatcher.reverseGeocoding(getCoordinates());
+						String address = getAddressList().get(0);
 						String arrivedUpdate = "\n** Vehicle #" + getId() + " arrived at " + address + " @ " + getCurrentDateTimeString() + " **";
 						fw.write("\n" + arrivedUpdate);
+						fw.flush();
 						System.out.println(arrivedUpdate);
 						// if the destination list has more items in it, get the next route
 						getNextRoute(fw);
@@ -150,6 +153,7 @@ public class Vehicle implements Runnable {
 				{
 					// otherwise print toString/status and make sure the status is available and not arrived
 					fw.write(toString());
+					fw.flush();
 					setStatus(VehicleStatus.AVAILABLE);
 					getNextRoute(fw);
 					try {
@@ -228,6 +232,11 @@ public class Vehicle implements Runnable {
 		return "(" + coordinates.getX() + ", " + coordinates.getY() + ")";
 	}
 
+	public static String getCoordinatesInStringFormat(Point2D coords)
+	{
+		return "(" + coords.getX() + ", " + coords.getY() + ")";
+	}
+
 	public List<Point2D> getRoute()
 	{
 		return route;
@@ -245,10 +254,10 @@ public class Vehicle implements Runnable {
 		for(int r = 0; r < route.size(); r++) {
 			if (r != (route.size() - 1)) 
 			{
-				routeString += route.get(r) + ",\n";
+				routeString += getCoordinatesInStringFormat(route.get(r)) + ",\n";
 			} else 
 			{
-				routeString += route.get(r) + "\nRoute End.";
+				routeString += getCoordinatesInStringFormat(route.get(r)) + "\nRoute End.";
 			}
 		}
 		return routeString;
@@ -277,7 +286,7 @@ public class Vehicle implements Runnable {
 	public String getRouteStartAddress()
 	{
 		String retAddress = "No route.";
-		Point2D startCoords = getRouteStartCoordinates();
+		Point2D startCoords = getCoordinates();
 		if (!startCoords.equals(NOT_FOUND))
 		{
 			retAddress = RouteDispatcher.reverseGeocoding(startCoords);
@@ -288,10 +297,9 @@ public class Vehicle implements Runnable {
 	public String getRouteEndAddress()
 	{
 		String retAddress = "No route.";
-		Point2D endCoords = getRouteEndCoordinates();
-		if (!endCoords.equals(NOT_FOUND))
+		if (getAddressList().size() > 0)
 		{
-			retAddress = RouteDispatcher.reverseGeocoding(endCoords);
+			retAddress = getAddressList().get(0);
 		}
 		return retAddress;
 	}
@@ -308,9 +316,17 @@ public class Vehicle implements Runnable {
 		return destinationList;
 	}
 
+	public List<String> getAddressList() { return addressList; }
+
 	private Vehicle setDestinationList(List<Point2D> list)
 	{
 		destinationList = list;
+		return this;
+	}
+
+	private Vehicle setAddressList(List<String> list)
+	{
+		addressList = list;
 		return this;
 	}
 
@@ -320,9 +336,9 @@ public class Vehicle implements Runnable {
 		return this;
 	}
 
-	public Vehicle insertPointToDestinationList(Point2D newDest, int index)
+	public Vehicle addAddressToAddressList(String address)
 	{
-		destinationList.add(index, newDest);
+		addressList.add(address);
 		return this;
 	}
 
@@ -330,21 +346,29 @@ public class Vehicle implements Runnable {
 	{
 		Point2D point = RouteDispatcher.forwardGeocoding(address);
 		addPointToDestinationList(point);
+		addAddressToAddressList(address);
 		return this;
 	}
 
 	private void getNextRoute(FileWriter fw)
 	{
-		if(destinationList.size() > 0)
+		if(destinationList.size() > 0 && addressList.size() > 0)
 		{
+			// remove the previous destination
+			// by doing this all you need to do to get the address is
+			// get the address in addressList at position 0
+			// so no more reverse geocoding each time to print the address.
+			getDestinationList().remove(0);
+			getAddressList().remove(0);
+
 			Point2D newDestination = getDestinationList().get(0);
-			String address = RouteDispatcher.reverseGeocoding(newDestination);
+			String address = getAddressList().get(0);
 			Point2D currentLocation = getCoordinates();
 			setRoute(RouteDispatcher.getRouteFromCoordinates(currentLocation, newDestination));
-			getDestinationList().remove(0);
 			String departingUpdate = "\n** Vehicle #" + getId() + " departing to destination " + address + " @ " + dateToStringFormat.format(getCurrentDateTime()) + " **";
 			try {
 				fw.write("\n" + departingUpdate);
+				fw.flush();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

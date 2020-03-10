@@ -1,0 +1,28 @@
+** Vehicle simulation started at: 02/24/2020 13:14:02 **
+
+
+** Report date/time:02/24/2020 13:14:02
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:02/24/2020 13:14:12
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:02/24/2020 13:14:22
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:02/24/2020 13:14:32
+Vehicle ID #2
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+*** Vehicle #2 shutting down at 02/24/2020 13:14:42 ***

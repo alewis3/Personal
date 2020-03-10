@@ -1,0 +1,86 @@
+** Vehicle simulation started at: 02/24/2020 13:39:05 **
+
+
+** Report date/time:02/24/2020 13:39:05
+Vehicle ID #0
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Report date/time:02/24/2020 13:39:15
+Vehicle ID #0
+Vehicle Status: AVAILABLE
+Vehicle Coordinates: (-97.7437, 30.2711)
+Vehicle Destination: No route. **
+
+** Vehicle #0 departing to latitude: 30.281563 and longitude: -97.721402 @ 02/24/2020 13:39:15 **
+
+** Report date/time:02/24/2020 13:39:35
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.743813, 30.272484)
+Vehicle Destination: null **
+
+** Report date/time:02/24/2020 13:39:45
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.743011, 30.274593)
+Vehicle Destination: null **
+
+** Report date/time:02/24/2020 13:39:56
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.74221, 30.276709)
+Vehicle Destination: null **
+
+** Report date/time:02/24/2020 13:40:06
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.740875, 30.277243)
+Vehicle Destination: null **
+
+** Report date/time:02/24/2020 13:40:16
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.737244, 30.276224)
+Vehicle Destination: null **
+
+** Report date/time:02/24/2020 13:40:26
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.734978, 30.275597)
+Vehicle Destination: null **
+
+** Report date/time:02/24/2020 13:40:36
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.732895, 30.275076)
+Vehicle Destination: null **
+
+** Report date/time:02/24/2020 13:40:46
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.730988, 30.274605)
+Vehicle Destination: null **
+
+** Report date/time:02/24/2020 13:40:57
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.730125, 30.276794)
+Vehicle Destination: null **
+
+** Report date/time:02/24/2020 13:41:07
+Vehicle ID #0
+Vehicle Status: IN_TRANSIT
+Vehicle Coordinates: (-97.724083, 30.279255)
+Vehicle Destination: null **
+
+** Vehicle #0 arrived at null @ 02/24/2020 13:41:15 **
+
+** Report date/time:02/24/2020 13:41:16
+Vehicle ID #0
+Vehicle Status: ARRIVED
+Vehicle Coordinates: (-97.721603, 30.281528)
+Vehicle Destination: No route. **
+
+*** Vehicle #0 shutting down at 02/24/2020 13:41:26 ***
